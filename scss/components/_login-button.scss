@@ -1,0 +1,30 @@
+@import "../mixins/mixins.scss";
+
+.login-button{
+  display: flex;
+  gap: 6px;
+  align-items:center;
+  font-size: 12px;
+  i {
+    color: $text-ternary;
+  }
+  span {
+    font-size: 13px;
+  }
+  width : fit-content;
+  height: 36px;
+  border : 1px solid $border-primary;
+  padding : 1px 15px;
+  color : $text-ternary;
+  border-radius: 18px;
+  flex-shrink: 0;
+  text-decoration: none;
+  @include icon-hover--ver2(#263850);
+
+  &--filled {
+    background-color: $text-ternary;
+    color: $text-secondary;
+    @include icon-hover($text-ternary);
+    border: 1px solid transparent;
+  }
+}

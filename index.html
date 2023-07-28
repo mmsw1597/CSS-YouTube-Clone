@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/f6629f0aed.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+  <title>youtube</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header__start">
+      <a href="#" class="icon">
+        <i class="fa-solid fa-bars"></i>
+      </a>
+      <a href="#" class="header__logo">
+        <img src="./asset/logo.png" alt="유튜브 로고">
+      </a>
+    </div>
+    <div class="header__middle">
+      <div class="container">
+        <form class="search">
+          <input type="text" class="search__input" placeholder="검색">
+          <button class="search__button">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+          <button class="search__keyboard">
+            <img src="./asset/keyboard.png" alt="검색바 키보드"/>
+          </button>
+        </form>
+        <a class="icon icon--circle-background">
+          <i class="fa-solid fa-microphone"></i>
+        </a>
+      </div>
+      <div class="container-md">
+        <a href="#" class="icon icon--circle">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </a>
+        <a href="#" class="icon icon--circle">
+          <i class="fa-solid fa-microphone"></i>
+        </a>
+      </div>
+    </div>
+    <div class="header__end">
+      <div class="icons-container">
+        <a href="#" class="icon icon--circle">
+          <i class="fa-solid fa-video"></i>
+        </a>
+        <a href="#" class="icon icon--circle">
+          <i class="fa-solid fa-bell"></i>
+        </a>
+        <a href="#" class="profile">
+          <img src="./asset/profile.jpg" alt="profile">
+        </a>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <nav class="main-navigation">
+      <div class="sidebar">
+        <div class="sidebar__wrapper">
+          <div class="sidebar-section">
+            <div class="sidebar-section__items">
+              <a href="#" class="item">
+                <i class="fa-solid fa-house"></i>
+                <span class="item__name">홈</span>
+              </a>
+              <a href="#" class="item">
+                <i class="fa-solid fa-bolt-lightning"></i>
+                <span class="item__name">Shorts</span>
+              </a>
+              <a href="#" class="item">
+                <i class="fa-brands fa-youtube"></i>
+                <span class="item__name">구독</span>
+              </a>
+            </div>
+          </div>
+          <div class="sidebar-section">
+            <div class="sidebar-section__items">
+              <a href="#" class="item">
+                <i class="fa-solid fa-box"></i>
+                <span class="item__name">보관함</span>
+              </a>
+              <a href="#" class="item">
+                <i class="fa-solid fa-clock-rotate-left"></i>
+                <span class="item__name">시청기록</span>
+              </a>
+            </div>
+          </div>
+          <div class="sidebar-section sidebar-section--login">
+              <p>
+                로그인하면 동영상에 좋아요를 표시하고 댓글을 달거나 구독할 수 있습니다.
+              </p>
+              <a href="#" class="login-button">
+                <i class="fa-solid fa-circle-user"></i>
+                <span>로그인</span>
+              </a>
+          </div>
+          <div class="sidebar-section">
+            <div class="sidebar-section__items">
+              <div class="item-header">
+                탐색
+              </div>
+              <a href="#" class="item">
+                <i class="fa-solid fa-fire"></i>
+                <span class="item__name">인기 급상승</span>
+              </a>
+              <a href="#" class="item">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span class="item__name">쇼핑</span>
+              </a>
+              <a href="#" class="item">
+                <i class="fa-solid fa-music"></i>
+                <span class="item__name">음악</span>
+              </a>
+              <a href="#" class="item">
+                <i class="fa-solid fa-clapperboard"></i>
+                <span class="item__name">영화</span>
+              </a>
+              <a href="#" class="item">
+                <i class="fa-solid fa-tower-broadcast"></i>
+                <span class="item__name">방송</span>
+              </a>
+              <a href="#" class="item">
+                <i class="fa-solid fa-gamepad"></i>
+                <span class="item__name">게임</span>
+              </a>
+              <a href="#" class="item">
+                <i class="fa-solid fa-trophy"></i>
+                <span class="item__name">스포츠</span>
+              </a>
+              <a href="#" class="item">
+                <i class="fa-solid fa-lightbulb"></i>
+                <span class="item__name">학습</span>
+              </a>
+            </div>
+          </div>
+          <div class="sidebar-section">
+            <div class="sidebar-section__items">
+              <a href="#" class="item">
+                <i class="fa-solid fa-circle-plus"></i>
+                <span class="item__name">채널 탐색</span>
+              </a>
+            </div>
+          </div>
+          <div class="sidebar-section">
+            <div class="sidebar-section__items">
+              <div class="item-header">
+                Youtube 더보기
+              </div>
+              <a href="#" class="item">
+                <i class="fa-brands fa-youtube" style="color: #dd0e0e;"></i>
+                <span class="item__name">YouTube Premium</span>
+              </a>
+              <a href="#" class="item">
+                <i class="fa-brands fa-square-youtube" style="color: #f50505;"></i>
+                <span class="item__name">YouTube Music</span>
+              </a>
+              <a href="#" class="item">
+                <i class="fa-brands fa-youtube fa-rotate-30" style="color: #dd0e0e;"></i>
+                <span class="item__name">YouTube Kids</span>
+              </a>
+            </div>
+          </div>
+          <div class="sidebar-section">
+            <div class="sidebar-section__items">
+              <a href="#" class="item">
+                <i class="fa-solid fa-gear"></i>
+                <span class="item__name">설정</span>
+              </a>
+            </div>
+            <div class="sidebar-section__items">
+              <a href="#" class="item">
+                <i class="fa-solid fa-flag"></i>
+                <span class="item__name">신고 기록</span>
+              </a>
+            </div>
+            <div class="sidebar-section__items">
+              <a href="#" class="item">
+                <i class="fa-solid fa-circle-question"></i>
+                <span class="item__name">고객센터</span>
+              </a>
+            </div>
+            <div class="sidebar-section__items">
+              <a href="#" class="item">
+                <i class="fa-solid fa-message"></i>
+                <span class="item__name">의견 보내기</span>
+              </a>
+            </div>
+          </div>
+          <footer class="footer">
+            <div class="footer__links">
+              <a href="#">정보</a>
+              <a href="#">보도자료</a>
+              <a href="#">저작권</a>
+              <a href="#">문의하기</a>
+              <a href="#">크리에이터</a>
+              <a href="#">광고</a>
+              <a href="#">개발자</a>
+            </div>
+            <div class="footer__links">
+              <a href="#">약관</a>
+              <a href="#">개인정보처리방침</a>
+              <a href="#">정책 및 안전</a>
+              <a href="#">Youtube 작동의 원리</a>
+              <a href="#">새로운 기능 테스트하기</a>
+            </div>
+            <div class="footer__end">
+              <p>
+                © 2023 Google LLC, Sundar Pichai, 1600 Amphitheatre Parkway, Mountain View CA 94043, USA, 0807-882-594 (무료), yt-support-solutions-kr@google.com, 호스팅: Google LLC, 
+                <a href="#">사업자정보</a>,
+                <a href="#">불법촬영물 신고</a>
+                <br>
+                크리에이터들이 유튜브 상에 게시, 태그 또는 추천한 상품들은 판매자들의 약관에 따라 판매됩니다. 유튜브는 이러한 제품들을 판매하지 않으며, 그에 대한 책임을 지지 않습니다.
+              </p>
+            </div>
+          </footer>
+        </div>
+      </div>
+      <div class="sidebar-narrow">
+        <div class="sidebar-narrow__items">
+          <a href="#" class="item">
+            <div class="item-container">
+              <i class="fa-solid fa-house"></i>
+            </div> 
+            <span>홈</span>
+          </a>
+          <a href="#" class="item">
+            <i class="fa-solid fa-bolt-lightning"></i>
+            <span>Shorts</span>
+          </a>
+          <a href="#" class="item">
+            <i class="fa-brands fa-youtube"></i>
+            <span>구독</span>
+          </a>
+          <a href="#" class="item">
+            <i class="fa-solid fa-box"></i>
+            <span>보관함</span>
+          </a>
+          <a href="#" class="item">
+            <i class="fa-solid fa-clock-rotate-left"></i>
+            <span>시청기록</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <div class="main-content">
+      <div class="horizontal-tabs">
+        <a href="#">전체</a>
+        <a href="#">게임</a>
+        <a href="#">음악</a>
+        <a href="#">실시간</a>
+        <a href="#">액션 어드벤쳐 게임</a>
+        <a href="#">요리</a>
+        <a href="#">최근에 업로드된 영상</a>
+      </div>
+      <div class="main-ad">
+        <a href="#" class="main-ad__big-banner">
+          <img src="./asset/ad-banner.webp" alt="광고 이미지">
+        </a>
+        <div class="main-ad__side">
+          <div class="image-container">
+            <img src="https://yt3.ggpht.com/MQRsE_HCA3QcPEQZ9EpyRYO3_8lxZIqH_58iXzmesgKPD3DBu_0zCCe7H15eP2G3kL7qpTMLTA=w1060-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj" alt="광고 사이드 배너">
+          </div>
+          <div class="ad-logo-container">
+            <div class="logo">
+              <img src="./asset/ad-logo.jpg" alt="광고 로고">
+            </div>
+            <div class="ad-description">
+              <div><div>D.P.시즌2 | 준호X호열 콤비 컴백</div><a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a></div>
+              <span>광고 &#183; <a href="#" class="ad-description__link">Netflix Korea 넷플릭스 코리아</a></span>
+              <a href="#" class="login-button login-button--filled">오늘 시즌2 공개</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-videos">
+        <div class="main-videos__grid">
+          <div class="video-wrapper">
+            <a href="#" class="video">
+              <img src="./asset/이말년.webp" alt="이말년">
+              <div class="video__timestamp">
+                6:26:56
+              </div>
+            </a>
+            <div class="video-description">
+              <a href="#" class="video-logo">
+                <img src="./asset/이말년-로고.jpg" alt="이말년 로고">
+              </a>
+              <div class="video-description-wrapper">
+                <a href="#" class="video-description-wrapper__title">요즘 넷플 뭐봄?</a>
+                <a href="#" class="video-description-wrapper__name">침착맨</a>
+                <div class="video-description-wrapper__numbers">
+                  <span>조회수 5.6만회 &#183;</span>
+                  <span>3주 전</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="video-wrapper">
+            <a href="#" class="video">
+              <img src="./asset/영상2.webp" alt="영상2">
+              <div class="video__timestamp">
+                6:26:56
+              </div>
+            </a>
+            <div class="video-description">
+              <a href="#" class="video-logo">
+                <img src="./asset/로고2.jpg" alt="로고2">
+              </a>
+              <div class="video-description-wrapper">
+                <a href="#" class="video-description-wrapper__title">연세대학교 학생들에게 영어로 말한다거나 손 떠는 남팬 다시 만난 태연 반응 이라거나 답이 없다거나 이러쿵 저러쿵 한다거나 이상현상이 나타나났다거나</a>
+                <a href="#" class="video-description-wrapper__name">channel CKOONY</a>
+                <div class="video-description-wrapper__numbers">
+                  <span>조회수 109만회 &#183;</span>
+                  <span>6일 전</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="video-wrapper">
+            <a href="#" class="video">
+              <img src="./asset/영상3.webp" alt="영상3">
+              <div class="video__timestamp">
+                6:26:56
+              </div>
+            </a>
+            <div class="video-description">
+              <a href="#" class="video-logo">
+                <img src="./asset/로고3.jpg" alt="로고3">
+              </a>
+              <div class="video-description-wrapper">
+                <a href="#" class="video-description-wrapper__title">오래 기다렸다네요</a>
+                <a href="#" class="video-description-wrapper__name">야꼬널깨</a>
+                <div class="video-description-wrapper__numbers">
+                  <span>조회수 29만회 &#183;</span>
+                  <span>2개월 전</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="video-wrapper">
+            <a href="#" class="video">
+              <img src="./asset/영상4.webp" alt="영상4">
+              <div class="video__timestamp">
+                6:26:56
+              </div>
+            </a>
+            <div class="video-description">
+              <a href="#" class="video-logo">
+                <img src="./asset/로고4.jpg" alt="로고4">
+              </a>
+              <div class="video-description-wrapper">
+                <a href="#" class="video-description-wrapper__title">이상현상</a>
+                <a href="#" class="video-description-wrapper__name">YTN</a>
+                <div class="video-description-wrapper__numbers">
+                  <span>조회수 331만회 &#183;</span>
+                  <span>5개월 전</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="video-wrapper">
+            <a href="#" class="video">
+              <img src="./asset/영상5.webp" alt="영상5">
+              <div class="video__timestamp">
+                6:26:56
+              </div>
+            </a>
+            <div class="video-description">
+              <a href="#" class="video-logo">
+                <img src="./asset/로고5.jpg" alt="로고5">
+              </a>
+              <div class="video-description-wrapper">
+                <a href="#" class="video-description-wrapper__title">괴담</a>
+                <a href="#" class="video-description-wrapper__name">MBC</a>
+                <div class="video-description-wrapper__numbers">
+                  <span>조회수 7.5만회 &#183;</span>
+                  <span>1시간 전</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="video-wrapper">
+            <a href="#" class="video">
+              <img src="./asset/영상6.webp" alt="이말년">
+              <div class="video__timestamp">
+                6:26:56
+              </div>
+            </a>
+            <div class="video-description">
+              <a href="#" class="video-logo">
+                <img src="./asset/로고6.jpg" alt="이말년 로고">
+              </a>
+              <div class="video-description-wrapper">
+                <a href="#" class="video-description-wrapper__title">마라탕 VS 떡볶이</a>
+                <a href="#" class="video-description-wrapper__name">얜 누구야</a>
+                <div class="video-description-wrapper__numbers">
+                  <span>조회수 325만회 &#183;</span>
+                  <span>1개월 전</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="video-wrapper">
+            <a href="#" class="video">
+              <img src="./asset/영상7.webp" alt="이말년">
+              <div class="video__timestamp">
+                6:26:56
+              </div>
+            </a>
+            <div class="video-description">
+              <a href="#" class="video-logo">
+                <img src="./asset/로고7.jpg" alt="이말년 로고">
+              </a>
+              <div class="video-description-wrapper">
+                <a href="#" class="video-description-wrapper__title">상어 귀엽다</a>
+                <a href="#" class="video-description-wrapper__name">머시깽이</a>
+                <div class="video-description-wrapper__numbers">
+                  <span>조회수 5.6만회 &#183;</span>
+                  <span>3주 전</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="video-wrapper">
+            <a href="#" class="video">
+              <img src="./asset/영상8.webp" alt="영상8">
+              <div class="video__timestamp">
+                6:26:56
+              </div>
+            </a>
+            <div class="video-description">
+              <a href="#" class="video-logo">
+                <img src="./asset/로고8.jpg" alt="로고8">
+              </a>
+              <div class="video-description-wrapper">
+                <a href="#" class="video-description-wrapper__title">축구 축구</a>
+                <a href="#" class="video-description-wrapper__name">뉴스</a>
+                <div class="video-description-wrapper__numbers">
+                  <span>조회수 99.6만회 &#183;</span>
+                  <span>2주 전</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="video-wrapper">
+            <a href="#" class="video">
+              <img src="./asset/이말년.webp" alt="이말년">
+              <div class="video__timestamp">
+                6:26:56
+              </div>
+            </a>
+            <div class="video-description">
+              <a href="#" class="video-logo">
+                <img src="./asset/이말년-로고.jpg" alt="이말년 로고">
+              </a>
+              <div class="video-description-wrapper">
+                <a href="#" class="video-description-wrapper__title">요즘 넷플 뭐봄?</a>
+                <a href="#" class="video-description-wrapper__name">침착맨</a>
+                <div class="video-description-wrapper__numbers">
+                  <span>조회수 5.6만회 &#183;</span>
+                  <span>3주 전</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="video-wrapper">
+            <a href="#" class="video">
+              <img src="./asset/이말년.webp" alt="이말년">
+              <div class="video__timestamp">
+                6:26:56
+              </div>
+            </a>
+            <div class="video-description">
+              <a href="#" class="video-logo">
+                <img src="./asset/이말년-로고.jpg" alt="이말년 로고">
+              </a>
+              <div class="video-description-wrapper">
+                <a href="#" class="video-description-wrapper__title">요즘 넷플 뭐봄?</a>
+                <a href="#" class="video-description-wrapper__name">침착맨</a>
+                <div class="video-description-wrapper__numbers">
+                  <span>조회수 5.6만회 &#183;</span>
+                  <span>3주 전</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="video-wrapper">
+            <a href="#" class="video">
+              <img src="./asset/이말년.webp" alt="이말년">
+              <div class="video__timestamp">
+                6:26:56
+              </div>
+            </a>
+            <div class="video-description">
+              <a href="#" class="video-logo">
+                <img src="./asset/이말년-로고.jpg" alt="이말년 로고">
+              </a>
+              <div class="video-description-wrapper">
+                <a href="#" class="video-description-wrapper__title">요즘 넷플 뭐봄?</a>
+                <a href="#" class="video-description-wrapper__name">침착맨</a>
+                <div class="video-description-wrapper__numbers">
+                  <span>조회수 5.6만회 &#183;</span>
+                  <span>3주 전</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="video-wrapper">
+            <a href="#" class="video">
+              <img src="./asset/이말년.webp" alt="이말년">
+              <div class="video__timestamp">
+                6:26:56
+              </div>
+            </a>
+            <div class="video-description">
+              <a href="#" class="video-logo">
+                <img src="./asset/이말년-로고.jpg" alt="이말년 로고">
+              </a>
+              <div class="video-description-wrapper">
+                <a href="#" class="video-description-wrapper__title">요즘 넷플 뭐봄?</a>
+                <a href="#" class="video-description-wrapper__name">침착맨</a>
+                <div class="video-description-wrapper__numbers">
+                  <span>조회수 5.6만회 &#183;</span>
+                  <span>3주 전</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main-videos__grid">
+          <div class="video-wrapper">
+            <a href="#" class="video">
+              <img src="./asset/이말년.webp" alt="이말년">
+              <div class="video__timestamp">
+                6:26:56
+              </div>
+            </a>
+            <div class="video-description">
+              <a href="#" class="video-logo">
+                <img src="./asset/이말년-로고.jpg" alt="이말년 로고">
+              </a>
+              <div class="video-description-wrapper">
+                <a href="#" class="video-description-wrapper__title">요즘 넷플 뭐봄?</a>
+                <a href="#" class="video-description-wrapper__name">침착맨</a>
+                <div class="video-description-wrapper__numbers">
+                  <span>조회수 5.6만회 &#183;</span>
+                  <span>3주 전</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="video-wrapper">
+            <a href="#" class="video">
+              <img src="./asset/이말년.webp" alt="이말년">
+              <div class="video__timestamp">
+                6:26:56
+              </div>
+            </a>
+            <div class="video-description">
+              <a href="#" class="video-logo">
+                <img src="./asset/이말년-로고.jpg" alt="이말년 로고">
+              </a>
+              <div class="video-description-wrapper">
+                <a href="#" class="video-description-wrapper__title">요즘 넷플 뭐봄?</a>
+                <a href="#" class="video-description-wrapper__name">침착맨</a>
+                <div class="video-description-wrapper__numbers">
+                  <span>조회수 5.6만회 &#183;</span>
+                  <span>3주 전</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="video-wrapper">
+            <a href="#" class="video">
+              <img src="./asset/이말년.webp" alt="이말년">
+              <div class="video__timestamp">
+                6:26:56
+              </div>
+            </a>
+            <div class="video-description">
+              <a href="#" class="video-logo">
+                <img src="./asset/이말년-로고.jpg" alt="이말년 로고">
+              </a>
+              <div class="video-description-wrapper">
+                <a href="#" class="video-description-wrapper__title">요즘 넷플 뭐봄?</a>
+                <a href="#" class="video-description-wrapper__name">침착맨</a>
+                <div class="video-description-wrapper__numbers">
+                  <span>조회수 5.6만회 &#183;</span>
+                  <span>3주 전</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="video-wrapper">
+            <a href="#" class="video">
+              <img src="./asset/이말년.webp" alt="이말년">
+              <div class="video__timestamp">
+                6:26:56
+              </div>
+            </a>
+            <div class="video-description">
+              <a href="#" class="video-logo">
+                <img src="./asset/이말년-로고.jpg" alt="이말년 로고">
+              </a>
+              <div class="video-description-wrapper">
+                <a href="#" class="video-description-wrapper__title">요즘 넷플 뭐봄?</a>
+                <a href="#" class="video-description-wrapper__name">침착맨</a>
+                <div class="video-description-wrapper__numbers">
+                  <span>조회수 5.6만회 &#183;</span>
+                  <span>3주 전</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="video-wrapper">
+            <a href="#" class="video">
+              <img src="./asset/이말년.webp" alt="이말년">
+              <div class="video__timestamp">
+                6:26:56
+              </div>
+            </a>
+            <div class="video-description">
+              <a href="#" class="video-logo">
+                <img src="./asset/이말년-로고.jpg" alt="이말년 로고">
+              </a>
+              <div class="video-description-wrapper">
+                <a href="#" class="video-description-wrapper__title">요즘 넷플 뭐봄?</a>
+                <a href="#" class="video-description-wrapper__name">침착맨</a>
+                <div class="video-description-wrapper__numbers">
+                  <span>조회수 5.6만회 &#183;</span>
+                  <span>3주 전</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="video-wrapper">
+            <a href="#" class="video">
+              <img src="./asset/이말년.webp" alt="이말년">
+              <div class="video__timestamp">
+                6:26:56
+              </div>
+            </a>
+            <div class="video-description">
+              <a href="#" class="video-logo">
+                <img src="./asset/이말년-로고.jpg" alt="이말년 로고">
+              </a>
+              <div class="video-description-wrapper">
+                <a href="#" class="video-description-wrapper__title">요즘 넷플 뭐봄?</a>
+                <a href="#" class="video-description-wrapper__name">침착맨</a>
+                <div class="video-description-wrapper__numbers">
+                  <span>조회수 5.6만회 &#183;</span>
+                  <span>3주 전</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="video-wrapper">
+            <a href="#" class="video">
+              <img src="./asset/이말년.webp" alt="이말년">
+              <div class="video__timestamp">
+                6:26:56
+              </div>
+            </a>
+            <div class="video-description">
+              <a href="#" class="video-logo">
+                <img src="./asset/이말년-로고.jpg" alt="이말년 로고">
+              </a>
+              <div class="video-description-wrapper">
+                <a href="#" class="video-description-wrapper__title">요즘 넷플 뭐봄?</a>
+                <a href="#" class="video-description-wrapper__name">침착맨</a>
+                <div class="video-description-wrapper__numbers">
+                  <span>조회수 5.6만회 &#183;</span>
+                  <span>3주 전</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="video-wrapper">
+            <a href="#" class="video">
+              <img src="./asset/이말년.webp" alt="이말년">
+              <div class="video__timestamp">
+                6:26:56
+              </div>
+            </a>
+            <div class="video-description">
+              <a href="#" class="video-logo">
+                <img src="./asset/이말년-로고.jpg" alt="이말년 로고">
+              </a>
+              <div class="video-description-wrapper">
+                <a href="#" class="video-description-wrapper__title">요즘 넷플 뭐봄?</a>
+                <a href="#" class="video-description-wrapper__name">침착맨</a>
+                <div class="video-description-wrapper__numbers">
+                  <span>조회수 5.6만회 &#183;</span>
+                  <span>3주 전</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="video-wrapper">
+            <a href="#" class="video">
+              <img src="./asset/이말년.webp" alt="이말년">
+              <div class="video__timestamp">
+                6:26:56
+              </div>
+            </a>
+            <div class="video-description">
+              <a href="#" class="video-logo">
+                <img src="./asset/이말년-로고.jpg" alt="이말년 로고">
+              </a>
+              <div class="video-description-wrapper">
+                <a href="#" class="video-description-wrapper__title">요즘 넷플 뭐봄?</a>
+                <a href="#" class="video-description-wrapper__name">침착맨</a>
+                <div class="video-description-wrapper__numbers">
+                  <span>조회수 5.6만회 &#183;</span>
+                  <span>3주 전</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="video-wrapper">
+            <a href="#" class="video">
+              <img src="./asset/이말년.webp" alt="이말년">
+              <div class="video__timestamp">
+                6:26:56
+              </div>
+            </a>
+            <div class="video-description">
+              <a href="#" class="video-logo">
+                <img src="./asset/이말년-로고.jpg" alt="이말년 로고">
+              </a>
+              <div class="video-description-wrapper">
+                <a href="#" class="video-description-wrapper__title">요즘 넷플 뭐봄?</a>
+                <a href="#" class="video-description-wrapper__name">침착맨</a>
+                <div class="video-description-wrapper__numbers">
+                  <span>조회수 5.6만회 &#183;</span>
+                  <span>3주 전</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="video-wrapper">
+            <a href="#" class="video">
+              <img src="./asset/이말년.webp" alt="이말년">
+              <div class="video__timestamp">
+                6:26:56
+              </div>
+            </a>
+            <div class="video-description">
+              <a href="#" class="video-logo">
+                <img src="./asset/이말년-로고.jpg" alt="이말년 로고">
+              </a>
+              <div class="video-description-wrapper">
+                <a href="#" class="video-description-wrapper__title">요즘 넷플 뭐봄?</a>
+                <a href="#" class="video-description-wrapper__name">침착맨</a>
+                <div class="video-description-wrapper__numbers">
+                  <span>조회수 5.6만회 &#183;</span>
+                  <span>3주 전</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="video-wrapper">
+            <a href="#" class="video">
+              <img src="./asset/이말년.webp" alt="이말년">
+              <div class="video__timestamp">
+                6:26:56
+              </div>
+            </a>
+            <div class="video-description">
+              <a href="#" class="video-logo">
+                <img src="./asset/이말년-로고.jpg" alt="이말년 로고">
+              </a>
+              <div class="video-description-wrapper">
+                <a href="#" class="video-description-wrapper__title">요즘 넷플 뭐봄?</a>
+                <a href="#" class="video-description-wrapper__name">침착맨</a>
+                <div class="video-description-wrapper__numbers">
+                  <span>조회수 5.6만회 &#183;</span>
+                  <span>3주 전</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

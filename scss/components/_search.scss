@@ -1,0 +1,47 @@
+@import "../mixins/mixins.scss";
+
+.search {
+  display:flex;
+  align-items: center;
+  position: relative;
+  width:100%;
+
+  &__input {
+    &:focus {
+      border: 1px solid $border-focus;
+    }
+    width: calc(100% - 60px);
+    background-color: transparent;
+    color: $text-primary;
+    border: 1px solid $border-secondary;
+    padding: 0 4px 0 16px;
+    height: 40px;
+    margin: 0;
+    border-top-left-radius: 40px;
+    font-size: 16px;
+    border-bottom-left-radius: 40px;
+    &::placeholder{
+      color: $text-quaternary;
+    }
+  }
+  &__button {
+    color: $text-primary;
+    background-color: $background-secondary;
+    width: 64px;
+    height: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border: 1px solid $border-secondary;
+    cursor: pointer;
+  }
+  &__keyboard {
+    position: absolute;
+    width: 31px;
+    height: 24px;
+    background-color: $background-primary;
+    border: 0;
+    padding: 0;
+    cursor:pointer;
+    right: 66px;
+  }
+}

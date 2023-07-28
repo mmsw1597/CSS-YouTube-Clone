@@ -1,0 +1,58 @@
+@import "./layout/header";
+@import "./layout/horizontal-tabs";
+@import "./layout/main-sidebar";
+@import "./layout/advertisement";
+@import "./layout/videos";
+
+@import "./components/login-button";
+@import "./components/icon";
+@import "./components/search";
+
+*{
+  box-sizing: border-box;
+}
+
+i {
+  color: $text-primary;
+  font-size: 18px;
+}
+
+body{
+  display: block;
+  text-size-adjust: 100%;
+  background-color: $background-primary;
+  color : $text-primary;
+  line-height: 1.4;
+  font-size: 10px;
+  font-family: Roboto, Arial, sans-serif;
+  &::-webkit-scrollbar{
+    width: 6px;
+  }
+  &::-webkit-scrollbar-thumb{
+    background: darken($text-primary, 40%);
+    border-radius: 10px;
+  }
+  &::-webkit-scrollbar-track{
+    background: transparent;
+  }
+}
+
+img{
+  display: block;
+  max-width : 100%;
+}
+
+:focus{
+  outline: none;
+}
+
+main{
+  margin-top: 56px;
+  @media ((min-width: $media-disappear-sidebar-size) and (max-width: $media-narrow-sideber-size)) {
+    margin-left: 72px;
+  }
+
+  @media (min-width: $media-narrow-sideber-size) {
+    margin-left: 240px;
+  }
+}

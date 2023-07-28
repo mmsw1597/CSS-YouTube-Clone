@@ -1,0 +1,48 @@
+@import "../mixins/mixins.scss";
+
+.horizontal-tabs{
+  display: flex;
+  position: sticky;
+  top: 56px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin-left: 24px;
+  align-items: center;
+  width: calc(100% - 24px);
+  padding : 12px 0;
+  background-color: $background-primary;
+  overflow: hidden;
+  z-index: 200;
+  gap: 12px;
+  height: 56px;
+  a {
+    display:flex;
+    flex-shrink: 0;
+    align-items: center;
+    padding: 0 12px;
+    font-size: 14px;
+    text-decoration: none;
+    color: $text-primary;
+    border-radius: 8px;
+    background-color: $icon-background;
+    height: 32px;
+    transition: 0.3s ease;
+    @include icon-hover;
+  }
+  a:first-child {
+    background-color: #f1f1f1;
+    color: $text-secondary;
+  }
+  @media((max-width: 667px)) {
+    &::after {
+      display: block;
+      position: absolute;
+      right: 0;
+      width: 50px;
+      height: 56px;
+      background-image: linear-gradient(to left, rgb(15, 15, 15) 20%, rgba(33, 33, 32, 0) 80%);
+      content: "";
+    }
+  }
+}
